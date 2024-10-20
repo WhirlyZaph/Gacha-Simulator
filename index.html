@@ -1,459 +1,149 @@
-<div class="Start" style="width: 1512px; height: 982px; position: relative; background: white">
-  <img class="Background" style="width: 1512px; height: 982px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1512x982" />
-  <div class="Table" style="width: 1018.91px; height: 338.18px; left: 247px; top: 710px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-    <div class="Table" style="width: 1018.91px; height: 338.22px; position: relative">
-      <div class="Vector" style="width: 1008.73px; height: 171.53px; left: 5.13px; top: 161.10px; position: absolute; background: #999999"></div>
-      <div class="Vector" style="width: 1018.77px; height: 181.57px; left: 0.11px; top: 156.08px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 1011.39px; height: 330.66px; left: 3.76px; top: 3.76px; position: absolute; background: #E6E6E6"></div>
-      <div class="Vector" style="width: 1018.91px; height: 338.22px; left: 0px; top: 0px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 1011.65px; height: 171.37px; left: 1px; top: 7.48px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Ludiflex | Login & Registration</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO .</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="Title" style="width: 835.42px; height: 208.13px; padding-top: 3.50px; padding-bottom: 3.50px; padding-left: 3.50px; padding-right: 2.34px; left: 343px; top: -19px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-    <div class="Title" style="width: 829.58px; height: 201.13px; position: relative">
-      <div class="Vector" style="width: 24.36px; height: 96.56px; left: 126.46px; top: 0px; position: absolute; background: white; border: 7px black solid"></div>
-      <div class="Vector" style="width: 24.36px; height: 32px; left: 129.72px; top: 27.20px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 24.36px; height: 32px; left: 129.72px; top: 0px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 24.36px; height: 96.56px; left: 705.54px; top: 0px; position: absolute; background: white; border: 7px black solid"></div>
-      <div class="Vector" style="width: 24.36px; height: 32px; left: 708.80px; top: 27.20px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 24.36px; height: 32px; left: 708.80px; top: 0px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 828.42px; height: 139.76px; left: 0px; top: 61.37px; position: absolute; background: white; border: 7px black solid"></div>
-      <div class="Vector" style="width: 828.43px; height: 78.35px; left: 1.15px; top: 122.78px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.97px; left: 41.50px; top: 108.49px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 109.68px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.75px; left: 563.21px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 108.71px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.75px; left: 645.13px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 43.98px; height: 41.93px; left: 675.36px; top: 108.54px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 109.64px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.97px; left: 41.50px; top: 108.49px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 109.68px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.75px; left: 563.21px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 108.71px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.75px; left: 645.13px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 43.98px; height: 41.93px; left: 675.36px; top: 108.54px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.97px; left: 41.50px; top: 108.49px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 109.68px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.75px; left: 563.21px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 108.71px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.75px; left: 645.13px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 43.98px; height: 41.93px; left: 675.36px; top: 108.54px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 109.64px; position: absolute; border: 14px #CCCCCC solid"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.97px; left: 41.50px; top: 108.49px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 109.68px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.75px; left: 563.21px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 108.71px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.75px; left: 645.13px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 43.98px; height: 41.93px; left: 675.36px; top: 108.54px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 109.64px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.94px; left: 41.50px; top: 103.78px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.74px; left: 563.21px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 104px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.74px; left: 645.13px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 44.05px; height: 41.93px; left: 675.36px; top: 103.79px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 104.90px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.94px; left: 41.50px; top: 103.78px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.74px; left: 563.21px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 104px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.74px; left: 645.13px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 44.05px; height: 41.93px; left: 675.36px; top: 103.79px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.94px; left: 41.50px; top: 103.78px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.74px; left: 563.21px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 104px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.74px; left: 645.13px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 44.05px; height: 41.93px; left: 675.36px; top: 103.79px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 104.90px; position: absolute; border: 14px black solid"></div>
-      <div class="Vector" style="width: 41.65px; height: 41.94px; left: 41.50px; top: 103.78px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 41.55px; height: 39.72px; left: 84.95px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.78px; height: 39.72px; left: 129.72px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 186.56px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 235.55px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 42.36px; height: 39.72px; left: 261.94px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 30.23px; height: 39.72px; left: 308.99px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 345.23px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 375.78px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 10.32px; height: 39.72px; left: 413.66px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 49.82px; height: 39.72px; left: 431.04px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.60px; height: 39.72px; left: 487.90px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 39.67px; height: 39.72px; left: 518.43px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.29px; height: 39.74px; left: 563.21px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 29.37px; height: 41.82px; left: 612.24px; top: 104px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 27.28px; height: 39.74px; left: 645.13px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 44.05px; height: 41.93px; left: 675.36px; top: 103.79px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 33.03px; height: 39.72px; left: 726.41px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 22.59px; height: 39.72px; left: 764.29px; top: 104.90px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 26.25px; height: 25.28px; left: 684.27px; top: 112.14px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 31.31px; height: 30.35px; left: 681.68px; top: 109.60px; position: absolute; background: black"></div>
-    </div>
-  </div>
-  <div class="Decoration" style="width: 153.34px; height: 105.63px; left: 1080px; top: 780px; position: absolute">
-    <div class="OrangeBall" style="width: 149.38px; height: 104.65px; left: 2.03px; top: 0.98px; position: absolute">
-      <div class="Vector" style="width: 78.94px; height: 26.92px; left: 1.98px; top: 77.73px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 78.94px; height: 26.92px; left: 60.98px; top: 77.73px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 93.29px; height: 68.18px; left: 0.10px; top: 26.83px; position: absolute; background: #F08228; border: 4px black solid"></div>
-      <div class="Vector" style="width: 92.16px; height: 66.18px; left: 0px; top: 28.96px; position: absolute; mix-blend-mode: multiply; background: #F08228"></div>
-      <div class="Vector" style="width: 89.59px; height: 46.69px; left: 4.83px; top: 23.02px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-      <div class="Vector" style="width: 91.18px; height: 48.55px; left: 3.26px; top: 24.34px; position: absolute; background: white; border: 2px black solid"></div>
-      <div class="Vector" style="width: 68.41px; height: 93.46px; left: 80.97px; top: 1.02px; position: absolute; background: #F2F2F2; border: 4px black solid"></div>
-      <div class="Vector" style="width: 66.23px; height: 92.18px; left: 83.05px; top: 2.28px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 46.68px; height: 89.60px; left: 77.11px; top: 0.02px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-      <div class="Vector" style="width: 48.54px; height: 91.19px; left: 78.42px; top: 0px; position: absolute; background: white; border: 2px black solid"></div>
-    </div>
-  </div>
-  <div class="DrawMachine" style="width: 656.12px; height: 700.88px; left: 432px; top: 232px; position: absolute">
-    <div class="Shadow" style="width: 656.12px; height: 85.10px; left: 0px; top: 615.78px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-    <div class="Bot" style="width: 606.94px; height: 265.91px; left: 24.60px; top: 408.66px; position: absolute">
-      <div class="Vector" style="width: 597.39px; height: 80.11px; left: 4.78px; top: 117.49px; position: absolute; background: #EB8939; border: 5px black solid"></div>
-      <div class="Vector" style="width: 597.02px; height: 80.11px; left: 5.15px; top: 117.49px; position: absolute; opacity: 0.47; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 606.94px; height: 68.31px; left: 0px; top: 197.60px; position: absolute; background: #EB8939; border: 5px black solid"></div>
-      <div class="Vector" style="width: 598.46px; height: 68.28px; left: 8.49px; top: 197.60px; position: absolute; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 604.57px; height: 67.14px; left: 0.01px; top: 198.20px; position: absolute; opacity: 0.30; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 542.02px; height: 50px; left: 32.46px; top: 137.01px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 29.15px; height: 63.54px; left: 2.41px; top: 200.02px; position: absolute; background: white"></div>
-      <div class="Vector" style="width: 21px; height: 38.16px; left: 9.10px; top: 156.71px; position: absolute; background: white"></div>
-      <div class="LuckyDraw" style="width: 346.44px; height: 34.02px; left: 143.15px; top: 217.12px; position: absolute; mix-blend-mode: multiply">
-        <div class="Vector" style="width: 18.40px; height: 32.18px; left: 0px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 28.04px; height: 33.11px; left: 26.41px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 24.64px; height: 33.98px; left: 64.02px; top: 0px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 30.09px; height: 32.22px; left: 99.56px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 31.93px; height: 32.18px; left: 133.67px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 28.17px; height: 32.18px; left: 191.54px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 26.77px; height: 32.18px; left: 229.35px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 33.64px; height: 32.18px; left: 260.81px; top: 0.91px; position: absolute; background: #EB8939"></div>
-        <div class="Vector" style="width: 48.88px; height: 32.18px; left: 297.56px; top: 0.91px; position: absolute; background: #EB8939"></div>
-      </div>
-      <div class="Vector" style="width: 542.02px; height: 50px; left: 32.46px; top: 128.45px; position: absolute; background: #EB8939; border: 5px black solid"></div>
-      <div class="Vector" style="width: 542.02px; height: 50px; left: 31.82px; top: 128.45px; position: absolute; opacity: 0.51; mix-blend-mode: multiply; background: #EB8939; border: 5px black solid"></div>
-      <div class="Vector" style="width: 542.01px; height: 29.88px; left: 31.83px; top: 150.11px; position: absolute; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 543.84px; height: 158.83px; left: 31.57px; top: 0px; position: absolute; background: #FFE11C; border: 5px black solid"></div>
-      <div class="Vector" style="width: 543.84px; height: 16.75px; left: 31.57px; top: 141.73px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 543.79px; height: 151.54px; left: 31.57px; top: 3.78px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-    </div>
-    <div class="Handle" style="width: 101.32px; height: 110.34px; left: 418.90px; top: 443.33px; position: absolute">
-      <div class="Vector" style="width: 101.32px; height: 107.64px; left: 0px; top: 2.70px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 76.84px; height: 81.64px; left: 12.13px; top: 10.09px; position: absolute; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 76.86px; height: 43.83px; left: 12.12px; top: 10.12px; position: absolute; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 58.36px; height: 62px; left: 21.37px; top: 27.40px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 58.36px; height: 62px; left: 21.37px; top: 20.82px; position: absolute; background: #F1F1F1; border: 4px black solid"></div>
-      <div class="Vector" style="width: 58.36px; height: 34.91px; left: 21.37px; top: 19.75px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 58.36px; height: 34.91px; left: 21.37px; top: 47.96px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #B1B1B1"></div>
-      <div class="Vector" style="width: 96.64px; height: 102.66px; left: 2.23px; top: 0.49px; position: absolute; border: 5px black solid"></div>
-      <div class="Vector" style="width: 96.63px; height: 54.79px; left: 3.66px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 96.63px; height: 54.78px; left: 3.66px; top: 49.91px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-    </div>
-    <div class="Exit" style="width: 168.58px; height: 105.10px; left: 140.29px; top: 443.10px; position: absolute">
-      <div class="Vector" style="width: 168.57px; height: 92.84px; left: 0px; top: 12.26px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 167.05px; height: 92px; left: 0px; top: 6.05px; position: absolute; background: #F1F1F1; border: 4px black solid"></div>
-      <div class="Vector" style="width: 167.03px; height: 89.98px; left: 0px; top: 6.05px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #B1B1B1"></div>
-      <div class="Vector" style="width: 168.58px; height: 94.24px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 159.20px; height: 43.87px; left: 2.39px; top: 52.05px; position: absolute; background: #F1F1F1; border: 4px black solid"></div>
-      <div class="Vector" style="width: 159.19px; height: 8.34px; left: 3.93px; top: 87.58px; position: absolute; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 159.20px; height: 43.87px; left: 2.41px; top: 52.03px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #B1B1B1"></div>
-    </div>
-    <div class="Vector" style="width: 3.52px; height: 32.86px; left: 172.28px; top: 464.73px; position: absolute; border: 5px black solid"></div>
-    <div class="Vector" style="width: 3.52px; height: 32.87px; left: 264.03px; top: 462.06px; position: absolute; border: 5px black solid"></div>
-    <div class="Vector" style="width: 122.26px; height: 90.11px; left: 72.19px; top: 430.52px; position: absolute; background: white"></div>
-    <div class="Lid" style="width: 475.18px; height: 88.08px; left: 92.77px; top: 7.79px; position: absolute">
-      <div class="Vector" style="width: 384.02px; height: 30.45px; left: 43.86px; top: 0px; position: absolute; background: #FFE11C; border: 5px black solid"></div>
-      <div class="Vector" style="width: 383.94px; height: 30.45px; left: 45.81px; top: 0px; position: absolute; opacity: 0.71; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 384.01px; height: 8.12px; left: 44.46px; top: 22.21px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 471.71px; height: 58.72px; left: 0px; top: 29.36px; position: absolute; background: #EB8939; border: 5px black solid"></div>
-      <div class="Vector" style="width: 471.71px; height: 27.76px; left: 3.47px; top: 60.32px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 471.74px; height: 58.74px; left: 1.90px; top: 29.34px; position: absolute; opacity: 0.47; mix-blend-mode: overlay; background: white"></div>
-    </div>
-    <div class="CoinEnter" style="width: 219.20px; height: 34.07px; left: 219.17px; top: 48.40px; position: absolute">
-      <div class="Vector" style="width: 218.27px; height: 28.71px; left: 0px; top: 5.36px; position: absolute; opacity: 0.92; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 218.27px; height: 28.72px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-      <div class="Vector" style="width: 218.29px; height: 18.86px; left: 0.91px; top: 9.86px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #B1B1B1"></div>
-      <div class="Vector" style="width: 218.27px; height: 16.23px; left: 0px; top: 0px; position: absolute; opacity: 0.47; mix-blend-mode: overlay; background: white"></div>
-      <div class="Vector" style="width: 190.27px; height: 13.19px; left: 14px; top: 6.52px; position: absolute; background: black"></div>
-    </div>
-    <div class="Vector" style="width: 17.20px; height: 18.28px; left: 520.61px; top: 60.85px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-    <div class="Vector" style="width: 17.20px; height: 18.28px; left: 520.61px; top: 56.24px; position: absolute; background: white; border: 3px black solid"></div>
-    <div class="Vector" style="width: 17.20px; height: 18.28px; left: 118.81px; top: 60.85px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-    <div class="Vector" style="width: 17.20px; height: 18.28px; left: 118.81px; top: 56.24px; position: absolute; background: white; border: 3px black solid"></div>
-    <div class="Reflection" style="width: 112.75px; height: 42.78px; left: 98.84px; top: 47.22px; position: absolute; background: white"></div>
-    <div class="MiddleInside" style="width: 589.92px; height: 324.13px; left: 34px; top: 95.87px; position: absolute">
-      <div class="Vector" style="width: 589.92px; height: 324px; left: 0px; top: 0.13px; position: absolute; background: #F1F1F1; border: 4px black solid"></div>
-      <div class="Vector" style="width: 46.69px; height: 307.73px; left: 507.13px; top: 6.89px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 46.68px; height: 307.73px; left: 35.43px; top: 6.89px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 48.62px; height: 316.57px; left: 37.91px; top: 0px; position: absolute; border: 4px black solid"></div>
-      <div class="Vector" style="width: 48.62px; height: 316.57px; left: 502.11px; top: 0px; position: absolute; border: 4px black solid"></div>
-      <div class="Vector" style="width: 415.59px; height: 0px; left: 86.52px; top: 69.11px; position: absolute; border: 4px black solid"></div>
-      <div class="Vector" style="width: 416.07px; height: 0px; left: 86.04px; top: 234.24px; position: absolute; border: 4px black solid"></div>
-      <div class="Vector" style="width: 415.59px; height: 165.13px; left: 86.52px; top: 69.11px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 513.01px; height: 80.15px; left: 38.12px; top: 240.16px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 497.12px; height: 65.11px; left: 44.66px; top: 1.69px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-    </div>
-    <div class="Hole" style="width: 96.43px; height: 24.64px; left: 174.07px; top: 376.13px; position: absolute">
-      <div class="Vector" style="width: 96.34px; height: 24.64px; left: 0px; top: 0px; position: absolute; mix-blend-mode: darken; background: #CBCBCB"></div>
-      <div class="Vector" style="width: 96.34px; height: 20.90px; left: 0px; top: 3.74px; position: absolute; background: #666666"></div>
-      <div class="Vector" style="width: 96.35px; height: 13.45px; left: 0.08px; top: 3.72px; position: absolute; opacity: 0.72; mix-blend-mode: multiply; background: #B1B1B1"></div>
-      <div class="Vector" style="width: 96.35px; height: 11.32px; left: 0.07px; top: 13.30px; position: absolute; mix-blend-mode: hard-light; background: white"></div>
-    </div>
-    <div class="Dot2" style="width: 17.24px; height: 22.89px; left: 571.36px; top: 532.73px; position: absolute">
-      <div class="Vector" style="width: 17.20px; height: 18.28px; left: 0.03px; top: 4.61px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 17.20px; height: 18.28px; left: 0.03px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 17.24px; height: 9.13px; left: 0px; top: 8.37px; position: absolute; mix-blend-mode: darken; background: #CCCCCC"></div>
-    </div>
-    <div class="Dot" style="width: 17.24px; height: 22.89px; left: 71.89px; top: 532.73px; position: absolute">
-      <div class="Vector" style="width: 17.20px; height: 18.28px; left: 0.01px; top: 4.61px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #EB8939"></div>
-      <div class="Vector" style="width: 17.20px; height: 18.28px; left: 0.01px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 17.24px; height: 9.13px; left: 0px; top: 8.37px; position: absolute; mix-blend-mode: darken; background: #CCCCCC"></div>
-    </div>
-    <div class="Handle" style="width: 123.17px; height: 25.78px; left: 407px; top: 483px; position: absolute">
-      <div class="Layer1" style="width: 119.20px; height: 21.78px; left: 2px; top: 2px; position: absolute">
-        <div class="Vector" style="width: 119.17px; height: 21.78px; left: 0px; top: 0px; position: absolute; background: #F1F1F1; border: 4px black solid"></div>
-        <div class="Vector" style="width: 119.17px; height: 13.92px; left: 0px; top: 7px; position: absolute; opacity: 0.44; mix-blend-mode: multiply; background: #B1B1B1"></div>
-        <div class="Vector" style="width: 119.20px; height: 13.91px; left: 0px; top: 0.09px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-      </div>
-    </div>
-    <div class="Outline" style="width: 622.94px; height: 682.78px; left: 16.61px; top: 0px; position: absolute; background: black"></div>
-  </div>
-  <div class="OrangeEgg1" style="width: 100.92px; height: 100.87px; left: 869.67px; top: 537.49px; position: absolute; transform: rotate(-18.39deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #F08228; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #F08228"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="OrangeEgg1" style="width: 100.92px; height: 100.87px; left: 637.21px; top: 499px; position: absolute; transform: rotate(67.53deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #F08228; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #F08228"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="OrangeEgg1" style="width: 100.92px; height: 100.87px; left: 706.21px; top: 511px; position: absolute; transform: rotate(67.53deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #F08228; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #F08228"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="OrangeEgg1" style="width: 100.92px; height: 100.87px; left: 838.11px; top: 617.86px; position: absolute; transform: rotate(-162.23deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #F08228; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #F08228"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="YellowEgg1" style="width: 100.92px; height: 100.87px; left: 855.04px; top: 514px; position: absolute; transform: rotate(55.41deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #FFE11C; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #FFE11C"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="YellowEgg1" style="width: 100.92px; height: 100.87px; left: 697.88px; top: 595.20px; position: absolute; transform: rotate(-58.79deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #FFE11C; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #FFE11C"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="YellowEgg1" style="width: 100.92px; height: 100.87px; left: 585.04px; top: 509px; position: absolute; transform: rotate(55.41deg); transform-origin: 0 0">
-    <div class="Vector" style="width: 99.85px; height: 21.48px; left: 0.51px; top: 41.46px; position: absolute; background: #B2B2B2; border: 2px black solid"></div>
-    <div class="Vector" style="width: 100.86px; height: 53.63px; left: 0px; top: 0px; position: absolute; background: #E5E5E5; border: 4px black solid"></div>
-    <div class="Vector" style="width: 100.92px; height: 53.63px; left: 0px; top: 0px; position: absolute; opacity: 0.65; mix-blend-mode: overlay; background: white"></div>
-    <div class="Egg" style="width: 59.26px; height: 73.54px; left: 22.22px; top: 13.91px; position: absolute">
-      <div class="Vector" style="width: 58.41px; height: 73.54px; left: 0px; top: 0px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 25.23px; height: 24.36px; left: 16.52px; top: 24.58px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 29.40px; height: 28.38px; left: 14.52px; top: 22.61px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 58.41px; height: 40.08px; left: 0.85px; top: 32.52px; position: absolute; mix-blend-mode: multiply; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.68px; height: 11.38px; left: 33.92px; top: 9.97px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.06px; height: 8.12px; left: 35.53px; top: 19.55px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 3.50px; height: 5.86px; left: 44.36px; top: 21.57px; position: absolute; transform: rotate(-37.92deg); transform-origin: 0 0; background: #CCCCCC"></div>
-    </div>
-    <div class="Vector" style="width: 100.42px; height: 46.10px; left: 0.25px; top: 54.74px; position: absolute; background: #FFE11C; border: 4px black solid"></div>
-    <div class="Vector" style="width: 99.90px; height: 43.86px; left: 0.53px; top: 57.01px; position: absolute; mix-blend-mode: multiply; background: #FFE11C"></div>
-    <div class="Vector" style="width: 100.70px; height: 14.64px; left: 0.10px; top: 51.85px; position: absolute; background: white; border: 2px black solid"></div>
-  </div>
-  <div class="MaskGroup" style="width: 170px; height: 220px; left: 675px; top: 79px; position: absolute">
-    <div class="Rectangle1" style="width: 170px; height: 220px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-    <div class="Coin" style="width: 158px; height: 158px; left: 5.50px; top: 20px; position: absolute">
-      <div class="Vector" style="width: 157.99px; height: 157.86px; left: 0px; top: 0.06px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 157.99px; height: 81.07px; left: 0px; top: 0.06px; position: absolute; mix-blend-mode: screen; background: #FFE11C"></div>
-      <div class="Vector" style="width: 157.99px; height: 81.08px; left: 0.01px; top: 76.84px; position: absolute; mix-blend-mode: multiply; background: #FFE11C"></div>
-      <div class="Vector" style="width: 157.99px; height: 0px; left: 0px; top: 78.99px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 0px; height: 157.86px; left: 79px; top: 0.14px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 111.72px; height: 111.62px; left: 23.19px; top: 23.23px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 111.71px; height: 111.62px; left: 23.14px; top: 23.29px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 55.97px; height: 147.62px; left: 51.19px; top: 5.18px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 147.74px; height: 55.92px; left: 5.23px; top: 51.06px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 64.89px; height: 143.92px; left: 46.70px; top: 7.10px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 144.05px; height: 64.84px; left: 7.04px; top: 46.60px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 130.34px; height: 89.19px; left: 13.18px; top: 33.54px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 89.27px; height: 130.25px; left: 33.67px; top: 13.09px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 29.05px; height: 155.16px; left: 63.85px; top: 0.64px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 155.29px; height: 29.02px; left: 0.64px; top: 63.73px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 37.31px; height: 153.40px; left: 59.84px; top: 1.55px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 153.52px; height: 37.27px; left: 1.66px; top: 59.59px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 134.93px; height: 82.11px; left: 10.97px; top: 37.23px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 82.18px; height: 134.83px; left: 37.30px; top: 10.80px; position: absolute; mix-blend-mode: multiply; border: 4px #FFE11C solid"></div>
-      <div class="Vector" style="width: 128.01px; height: 127.91px; left: 14.99px; top: 15.04px; position: absolute; background: white; border: 3px black solid"></div>
-      <div class="Vector" style="width: 128.01px; height: 66.61px; left: 15px; top: 15.04px; position: absolute; mix-blend-mode: darken; background: #B2B2B2"></div>
-      <div class="Vector" style="width: 79.05px; height: 99.40px; left: 39.65px; top: 32.45px; position: absolute; mix-blend-mode: darken; background: #B2B2B2"></div>
-      <div class="Vector" style="width: 75.45px; height: 94.97px; left: 41.47px; top: 30.38px; position: absolute; background: white; border: 3.88px black solid"></div>
-      <div class="Vector" style="width: 32.65px; height: 31.40px; left: 62.85px; top: 62.21px; position: absolute; background: #FFE11C"></div>
-      <div class="Vector" style="width: 37.85px; height: 36.54px; left: 60.27px; top: 59.58px; position: absolute; background: black"></div>
-      <div class="Vector" style="width: 7.35px; height: 14.70px; left: 85.27px; top: 43.26px; position: absolute; transform: rotate(-37.90deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 5.23px; height: 10.49px; left: 87.36px; top: 55.64px; position: absolute; transform: rotate(-37.90deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 4.51px; height: 7.57px; left: 98.75px; top: 58.25px; position: absolute; transform: rotate(-37.90deg); transform-origin: 0 0; background: #CCCCCC"></div>
-      <div class="Vector" style="width: 123.54px; height: 133.52px; left: 0.38px; top: 0.87px; position: absolute; opacity: 0.60; mix-blend-mode: overlay; background: #FFE11C"></div>
-      <div class="Vector" style="width: 105.34px; height: 103.69px; left: 51.28px; top: 53.63px; position: absolute; opacity: 0.60; mix-blend-mode: overlay; background: #FFE11C"></div>
-      <div class="Vector" style="width: 157.99px; height: 157.86px; left: 0px; top: 0px; position: absolute; border: 3px black solid"></div>
-      <div class="Vector" style="width: 128.01px; height: 127.91px; left: 15.17px; top: 15.15px; position: absolute; border: 3px black solid"></div>
-    </div>
-  </div>
-  <div class="GoodLuck" style="width: 145px; height: 56px; left: 851px; top: 164px; position: absolute; text-align: center; color: white; font-size: 26px; font-family: Futura; font-weight: 700; line-height: 29.22px; word-wrap: break-word"> << GOOD<br/>     LUCK!</div>
-</div>
+</div>   
+
+
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+
+<script>
+
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+
+</script>
+
+</body>
+</html>
