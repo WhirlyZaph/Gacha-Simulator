@@ -6,20 +6,32 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [remember, setRemember] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState('');
+    const [isError, setIsError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Login attempt:', { nrp, password, remember });
-        // Here you would typically verify the login credentials
-        // For this example, we'll just show the popup
-        setShowPopup(true);
 
-        // Hide the popup after 3 seconds
-        setTimeout(() => {
-            setShowPopup(false);
-            // Redirect to Google (or your desired page) after showing the popup
-            window.location.href = "https://youtu.be/UcjFp9_0flo?si=UbxDituH1MOwP9oy&t=34";
-        }, 3000);
+        // Simple check - replace this with actual authentication logic
+        if (nrp === '123456' && password === 'password') {
+            setPopupMessage("You're logged in!");
+            setIsError(false);
+            setShowPopup(true);
+
+            setTimeout(() => {
+                setShowPopup(false);
+                window.location.href = "https://www.google.com";
+            }, 3000);
+        } else {
+            setPopupMessage("Invalid credentials. Please try again.");
+            setIsError(true);
+            setShowPopup(true);
+
+            setTimeout(() => {
+                setShowPopup(false);
+            }, 3000);
+        }
     };
 
     const handleGuestClick = (e) => {
@@ -98,8 +110,8 @@ const Login = () => {
             </div>
 
             {showPopup && (
-                <div className="popup">
-                    You're logged in!
+                <div className={`popup ${isError ? 'error' : 'success'}`}>
+                    {popupMessage}
                 </div>
             )}
         </div>
