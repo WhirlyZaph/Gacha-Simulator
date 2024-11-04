@@ -9,28 +9,40 @@ const Login = () => {
     const [popupMessage, setPopupMessage] = useState('');
     const [isError, setIsError] = useState(false);
 
-    const handleSubmit = (e) => {
+    // In Login.js
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Login attempt:', { nrp, password, remember });
 
-        // Simple check - replace this with actual authentication logic
-        if (nrp === '123456' && password === 'password') {
-            setPopupMessage("You're logged in!");
-            setIsError(false);
-            setShowPopup(true);
+        try {
+            console.log('Attempting login with:', { nrp, password });
+            const response = await fetch('http://localhost:5001/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ nrp, password }),
+            });
 
-            setTimeout(() => {
-                setShowPopup(false);
-                window.location.href = "https://www.google.com";
-            }, 3000);
-        } else {
-            setPopupMessage("Invalid credentials. Please try again.");
+            console.log('Response status:', response.status);
+            const data = await response.json();
+            console.log('Response data:', data);
+
+            if (!response.ok) {
+                setPopupMessage(data.message || "Login failed");
+                setIsError(true);
+                setShowPopup(true);
+                setTimeout(() => setShowPopup(false), 3000);
+                return;
+            }
+
+            // Success handling...
+
+        } catch (error) {
+            console.error('Login error:', error);
+            setPopupMessage("An error occurred. Please try again.");
             setIsError(true);
             setShowPopup(true);
-
-            setTimeout(() => {
-                setShowPopup(false);
-            }, 3000);
+            setTimeout(() => setShowPopup(false), 3000);
         }
     };
 
@@ -96,7 +108,7 @@ const Login = () => {
 
                     <div className="guest-link" style={{ textAlign: 'center' }}>
                         <p>
-                            Don't have account?{' '}
+                            Don't have an account?{' '}
                             <a
                                 href="#"
                                 onClick={handleGuestClick}
